@@ -1,0 +1,159 @@
+body {
+  min-height: 100vh !important;
+  background-color: #272b30;
+}
+a {
+  font-family: "Comfortaa", sans-serif;
+}
+h1,
+h3 {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
+}
+#coNav {
+  position: sticky !important;
+  top: 10px;
+  z-index: 5;
+}
+#nav {
+  background-color: rgb(58 73 123) !important;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+  border-radius: 20px;
+}
+#nav ul li a {
+  color: white;
+}
+#nav ul li :hover {
+  color: rgb(0 152 203);
+}
+#logo {
+  max-width: 70px;
+}
+.navbar-nav .nav-link.active {
+  color: rgb(0 152 203) !important;
+}
+.btn-gray {
+  font-size: 11px;
+  font-weight: 700;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(54 55 57);
+  --bs-btn-border-color: rgb(54 55 57);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(54 55 57);
+  --bs-btn-hover-border-color: rgb(54 55 57);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(54 55 57);
+  --bs-btn-active-border-color: rgb(54 55 57);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(54 55 57);
+  --bs-btn-disabled-border-color: rgb(54 55 57);
+}
+.card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+.card p {
+  font-family: "Comfortaa", sans-serif;
+}
+.card h5 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+.card .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  height: 80px;
+  color: #8d9092;
+}
+.card-body {
+  padding: 10px;
+}
+.card-title {
+  font-family: "Recursive", sans-serif;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background: linear-gradient(
+        0deg,
+        rgb(0 0 0/50%) 30%,
+        #0000 0 70%,
+        rgb(0 0 0/100%) 0
+      )
+      50%/8% 100%,
+    linear-gradient(90deg, rgb(0 0 0/25%) 30%, #0000 0 70%, rgb(0 0 0/75%) 0)
+      50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+.loader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+#information {
+  background-color: #27282b;
+  min-height: 100vh;
+  z-index: 50;
+}
+#infoD h3 {
+  line-height: 33px;
+  font-weight: 500;
+  font-size: 28px;
+}
+.p1,
+.p2,
+.p3 {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.p1 span,
+.p2 span,
+.p3 span {
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #0dcaf0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.p4 {
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 17px;
+}
+#button1 {
+  color: white;
+}
+i {
+  cursor: pointer;
+}
